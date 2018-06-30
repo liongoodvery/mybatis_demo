@@ -248,3 +248,4 @@ tmp/
 .worksheet
 .ideaDataSources
 *.ipr
+!gradle-wrapper.jar
