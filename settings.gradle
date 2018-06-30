@@ -1,3 +1,4 @@
 rootProject.name = 'mybaitis'
 include 'demo1'
+include 'mybatis_dao'
 

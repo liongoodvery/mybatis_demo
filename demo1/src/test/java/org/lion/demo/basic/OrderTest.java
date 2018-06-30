@@ -28,7 +28,7 @@ public class OrderTest {
 
     @Test
     public void test29() throws Exception {
-        orderMapper.selectOrdersList().stream()
+        orderMapper.selectUserList().stream()
                 .forEach(System.out::println);
     }
 }

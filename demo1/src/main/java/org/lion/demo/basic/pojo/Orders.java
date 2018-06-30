@@ -3,19 +3,14 @@ package org.lion.demo.basic.pojo;
 import java.io.Serializable;
 import java.util.Date;
 
-public class Orders  implements Serializable{
-    @Override
-	public String toString() {
-		return "Orders [id=" + id + ", userId=" + userId + ", number=" + number + ", createtime=" + createtime
-				+ ", note=" + note + "]";
-	}
+public class Orders implements Serializable {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
 
-	private Integer id;
+    private Integer id;
 
     private Integer userId;
 
@@ -24,24 +19,20 @@ public class Orders  implements Serializable{
     private Date createtime;
 
     private String note;
-    
+
     //附加对象  用户对象
     private User user;
-    
-    
-    
-    
-    
+
 
     public User getUser() {
-		return user;
-	}
+        return user;
+    }
 
-	public void setUser(User user) {
-		this.user = user;
-	}
+    public void setUser(User user) {
+        this.user = user;
+    }
 
-	public Integer getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -81,6 +72,15 @@ public class Orders  implements Serializable{
         this.note = note == null ? null : note.trim();
     }
 
-    
-    
+    @Override
+    public String toString() {
+        return "Orders{" +
+                "id=" + id +
+                ", userId=" + userId +
+                ", number='" + number + '\'' +
+                ", createtime=" + createtime +
+                ", note='" + note + '\'' +
+                ", user=" + user +
+                '}';
+    }
 }

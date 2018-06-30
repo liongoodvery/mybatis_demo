@@ -1,8 +1,7 @@
-package org.lion.demo.basic.pojo;
+package org.lion.demo.pojo;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
 
 public class User implements Serializable {
     /**
@@ -15,17 +14,6 @@ public class User implements Serializable {
     private Date birthday;// 生日
     private String address;// 地址
 
-    //附加对象List
-    private List<Orders> ordersList;
-
-
-    public List<Orders> getOrdersList() {
-        return ordersList;
-    }
-
-    public void setOrdersList(List<Orders> ordersList) {
-        this.ordersList = ordersList;
-    }
 
     public Integer getId() {
         return id;
@@ -75,7 +63,6 @@ public class User implements Serializable {
                 ", sex='" + sex + '\'' +
                 ", birthday=" + birthday +
                 ", address='" + address + '\'' +
-                ", ordersList=" + ordersList +
                 '}';
     }
 }
